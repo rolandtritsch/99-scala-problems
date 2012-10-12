@@ -1,7 +1,11 @@
 # general
 *~
+*#
+.history
 
 # build env
+.ensime_lucene/
+
 target/
 project/project/
 project/target/

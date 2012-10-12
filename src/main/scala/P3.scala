@@ -1,4 +1,4 @@
-package org.tritsch.scala.nintynine
+package org.tritsch.scala.ninetynine
 
 /**
  * P3 - find Nth element of a list.

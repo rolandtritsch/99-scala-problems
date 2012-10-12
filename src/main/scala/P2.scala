@@ -1,4 +1,4 @@
-package org.tritsch.scala.nintynine
+package org.tritsch.scala.ninetynine
 
 /**
  * P2 - return the last but one element of the list.

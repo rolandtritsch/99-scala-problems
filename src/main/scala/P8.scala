@@ -1,4 +1,4 @@
-package org.tritsch.scala.nintynine
+package org.tritsch.scala.ninetynine
 
 /**
  * P8 - remove the duplicates from a list

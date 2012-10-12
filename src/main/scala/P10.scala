@@ -1,4 +1,4 @@
-package org.tritsch.scala.nintynine
+package org.tritsch.scala.ninetynine
 
 /**
  * P10 - run-length encoding of a list
