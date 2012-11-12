@@ -16,11 +16,4 @@ object P10 {
   final def encode3(l: List[Any]): List[(Int, Any)] = {
     for(i <- l.distinct; c = l.count(_ == i)) yield (c, i)
   }
-
-  final def main(args: Array[String]): Unit = {
-    assert(args.length > 0, "Need at least 1 parameter - Usage: P10 <list with duplicates>")
-    println(args.mkString(",") + " -> " + encode(args.toList).toString)
-    println(args.mkString(",") + " -> " + encode2(args.toList).toString)
-    println(args.mkString(",") + " -> " + encode3(args.toList).toString)
-  } 
 }

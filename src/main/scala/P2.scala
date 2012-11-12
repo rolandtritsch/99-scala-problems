@@ -9,9 +9,4 @@ object P2 {
     l.take(l.length-1).last
     // l.apply(l.length-2)
   }
-
-  final def main(args: Array[String]): Unit = {
-    assert(args.size > 0, "Need at least 1 parameter - Usage: P2 <list of somthing>")
-    println(penultimate(args.toList))
-  } 
 }

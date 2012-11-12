@@ -14,11 +14,4 @@ object P25 {
       next._2 +: randomPermute(next._1)
     }
   }
-
-  final def main(args: Array[String]): Unit = {
-    assert(args.length > 0, "Needs at least 1 parameter - Usage: P25 <list of numbers>")
-    val l = args.toList
-    assert(!l.isEmpty, "<l> cannot be empty")
-    println(l.mkString(",") + " -> " + randomPermute(l).toString)
-  } 
 }

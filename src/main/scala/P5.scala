@@ -13,10 +13,4 @@ object P5 {
     if(l.length == 1) List(l.head)
     else reverse2(l.tail) ::: List(l.head)
   }
-
-  final def main(args: Array[String]): Unit = {
-    assert(args.length > 0, "Need at least 1 parameter - Usage: P5 <list of something>")
-    println(reverse(args.toList).mkString(","))
-    println(reverse2(args.toList).mkString(","))
-  } 
 }
