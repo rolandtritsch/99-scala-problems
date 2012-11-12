@@ -5,7 +5,7 @@ package org.tritsch.scala.ninetynine
  */
 
 object P16 {
-  final def dropN(n: Int, l: List[Any]): List[Any] = {
+  final def drop(n: Int, l: List[Any]): List[Any] = {
     (for(i <- 1 until l.size+1; if i%n != 0) yield l(i-1)).toList
   }
 
@@ -14,6 +14,6 @@ object P16 {
     val count = args.head.toInt; val list = args.tail.toList
     assert(count > 0, "Count needs to be bigger than 0")
     assert(list.size > 0, "List needs to have at least 1 element")
-    println(count + ": " + list.mkString(",") + " -> " + dropN(count, list).toString)
+    println(count + ": " + list.mkString(",") + " -> " + drop(count, list).toString)
   } 
 }

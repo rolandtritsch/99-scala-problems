@@ -1,7 +1,7 @@
 package org.tritsch.scala.ninetynine
 
 /**
- * P7 - flatten a list of lists
+ * P7 - flatten a (potentially nested) list of lists
  */
 
 object P7 {

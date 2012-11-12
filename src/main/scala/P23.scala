@@ -14,7 +14,7 @@ object P23 {
 
   final def randomSelect2(n: Int, l: List[Any]): List[Any] = {
     if(l.size == n) l
-    else randomSelect2(n, P20.removeN2(Random.nextInt(l.size), l)._1)
+    else randomSelect2(n, P20.removeAt(Random.nextInt(l.size), l)._1)
   }
 
   final def main(args: Array[String]): Unit = {

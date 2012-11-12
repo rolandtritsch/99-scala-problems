@@ -5,7 +5,7 @@ package org.tritsch.scala.ninetynine
  */
 
 object P15 {
-  final def dublicateN(n: Int, l: List[Any]): List[Any] = {
+  final def duplicateN(n: Int, l: List[Any]): List[Any] = {
     (for(e <- l) yield List.fill(n)(e)).flatten    
   }
 
@@ -14,6 +14,6 @@ object P15 {
     val count = args.head.toInt; val list = args.tail.toList
     assert(count > 0, "Count needs to be bigger than 0")
     assert(list.size > 0, "List needs to have at least 1 element")
-    println(count + ": " + list.mkString(",") + " -> " + dublicateN(count, list).toString)
+    println(count + ": " + list.mkString(",") + " -> " + duplicateN(count, list).toString)
   } 
 }
