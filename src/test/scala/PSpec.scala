@@ -55,10 +55,8 @@ class PSpec extends FlatSpec with BeforeAndAfter with ShouldMatchers {
     assert(!P6.isPalindrom("xhannah"))
   }
 
-  "P7" should "flatten a list of lists" ignore {
-    // P7.flatten(List(List(1, 1), 2, List(3, List(5, 8)))) should equal List(1, 1, 2, 3, 5, 8)
-    // P7.flatten(List(List(1, 1), List(2), List(3, List(5, 8)))) should equal (List(1, 1, 2, 3, 5, 8))
-    P7.flatten(List(List(1, 1), List(2), List(3, 5, 8))) should equal (List(1, 1, 2, 3, 5, 8))
+  "P7" should "flatten a list of lists" in {
+    P7.flatten(List(List(1, 1), 2, List(3, List(5, 8)))) should equal (List(1, 1, 2, 3, 5, 8))
   }
 
   "P8" should "remove the duplicates from a list" ignore {

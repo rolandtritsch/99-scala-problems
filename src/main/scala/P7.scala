@@ -5,7 +5,11 @@ package org.tritsch.scala.ninetynine
  */
 
 object P7 {
-  final def flatten(l: List[List[Any]]): List[Any] = {
-    l.flatten
+  final def flatten(nested: Any): List[Any] = {
+    nested match {
+      case Nil => Nil
+      case head :: tail => flatten(head) ::: flatten(tail)
+      case element => List(element)
+    }
   }
 }
