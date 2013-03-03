@@ -5,6 +5,7 @@
 
 # build env
 .ensime_lucene/
+.ensime
 
 target/
 project/project/
