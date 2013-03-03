@@ -61,7 +61,7 @@ class PSpec extends FlatSpec with BeforeAndAfter with ShouldMatchers {
 
   "P8" should "remove the duplicates from a list" ignore {
     // P8.compress(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e)) should equal (List('a, 'b, 'c, 'a, 'd, 'e))
-    P8.compress(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e)) should equal (List('a, 'b, 'c, 'd, 'e))    
+    P8.compress(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e)) should equal (List('a, 'b, 'c, 'd, 'e))
   }
 
   "P8-extended" should "remove the duplicates from a list" taggedAs(Tag("ExtendedTest")) ignore {
@@ -70,7 +70,7 @@ class PSpec extends FlatSpec with BeforeAndAfter with ShouldMatchers {
   }
 
   "P9" should "pack consecutive duplicates of list elements into sublists" ignore {
-/**    
+/**
     P9.pack(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e)) should equal (
       List(List('a, 'a, 'a, 'a), List('b), List('c, 'c), List('a, 'a), List('d), List('e, 'e, 'e, 'e))
     )
@@ -141,7 +141,7 @@ class PSpec extends FlatSpec with BeforeAndAfter with ShouldMatchers {
 
   "P17" should "split a list into two parts" in {
     P17.split(3, List('a, 'b, 'c, 'd, 'e, 'f, 'g, 'h, 'i, 'j, 'k)) should equal (
-      (List('a, 'b, 'c), List('d, 'e, 'f, 'g, 'h, 'i, 'j, 'k))    
+      (List('a, 'b, 'c), List('d, 'e, 'f, 'g, 'h, 'i, 'j, 'k))
     )
   }
 
