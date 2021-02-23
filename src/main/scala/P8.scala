@@ -9,7 +9,7 @@ object P8 {
     l.distinct
   }
 
-  final def compress2(l: List[Symbol]): List[Symbol] = {    
-    l.toSet.toList.sortWith(_.toString < _.toString)
+  final def compress2(l: List[String]): List[String] = {    
+    l.toSet.toList.sorted
   }
 }
