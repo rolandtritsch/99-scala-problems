@@ -36,24 +36,4 @@ object P26 {
   }
 
   final def fac(n: Int, k: Int): Int = if (k==1) n else n * fac(n-1, k-1)
-
-  final def main(args: Array[String]): Unit = {
-    assert(args.length >= 2, "Needs at least 2 parameter - Usage: P26 <k> <list of numbers>")
-
-    val k = args(0).toInt; val l = args.drop(1).toList
-    assert(k >= 1 && k<= l.size, "<k> needs to be k >= 1 && k<= l.size")
-    assert(!l.isEmpty, "<l> cannot be empty")
-
-    val result = combinations(k, l)
-    println(k + ": " + l.mkString(",") + " -> " + result.size + "/" + result.toString)
-    assert(result.size == fac(l.size, k), "Wrong number of combinations")
-
-    val distinctResult = result.map(_.toSet).distinct
-    println(k + ": " + l.mkString(",") + " -> " + distinctResult.size + "/" + distinctResult.toString)
-  } 
 }
-
-// k = 2: 2 -> 4; 3 -> 6; 4 -> 12; 5 -> 20; 
-// k = 3;         3 -> 6; 4 -> 24; 5 -> 60; 
-// k = 4;                 4 -> 24; 5 -> 120;
-// k = 5;                          5 -> 120; 
