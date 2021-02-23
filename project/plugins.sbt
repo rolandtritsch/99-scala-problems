@@ -1,1 +1,1 @@
-addSbtPlugin("org.ensime" % "ensime-sbt-cmd" % "0.1.0")
+addSbtPlugin("ch.epfl.lamp" % "sbt-dotty" % "0.5.3")
